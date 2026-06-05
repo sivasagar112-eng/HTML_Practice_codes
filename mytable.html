@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        h1 {
+            text-align: center;
+            color: #c00000;
+        }
+
+        /* Table styling */
+        table {
+            width: 70%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Table header */
+        thead {
+            background-color: #c00000;
+            color: white;
+        }
+
+        th {
+            padding: 12px;
+            border: 1px solid #ffb3b3;
+            text-transform: uppercase;
+            border: 2px solid black;
+        }
+
+        /* Table body */
+        td {
+            padding: 10px;
+            border: 1px solid #ffcccc;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        /* Alternate row color */
+        tbody tr:nth-child(even) {
+            background-color: #ffe6e6;
+        }
+
+        /* Hover effect */
+        tbody tr:hover {
+            background-color: #ffcccc;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Tables in HTML
+    </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll no.</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Siva</td>
+                <td>17</td>
+                <td>$9000000000000000</td>
+            </tr>
+            <tr>
+                <td>Priyanshi</td>
+                <td>19</td>
+                <td>$100000</td>
+            </tr>
+            <tr>
+                <td>Ama pila</td>
+                <td>20</td>
+                <td>$100000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

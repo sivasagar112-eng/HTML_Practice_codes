@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#ffdad3",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e8e2d9",
+                        "on-primary-fixed": "#2b1700",
+                        "primary-container": "#a76500",
+                        "surface-container": "#f4ede4",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#faf3ea",
+                        "on-secondary-fixed": "#351009",
+                        "background": "#fff8f0",
+                        "on-secondary-container": "#7a473d",
+                        "on-tertiary-fixed": "#2f1406",
+                        "on-background": "#1e1b16",
+                        "on-tertiary-fixed-variant": "#623e2c",
+                        "on-primary-container": "#fffbff",
+                        "inverse-primary": "#ffb869",
+                        "surface": "#fff8f0",
+                        "tertiary-container": "#966b56",
+                        "on-surface-variant": "#524436",
+                        "primary-fixed": "#ffdcbb",
+                        "surface-container-highest": "#e8e2d9",
+                        "tertiary-fixed": "#ffdbcb",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#eee7de",
+                        "surface-bright": "#fff8f0",
+                        "on-surface": "#1e1b16",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#ffb869",
+                        "inverse-surface": "#33302a",
+                        "inverse-on-surface": "#f7f0e7",
+                        "tertiary": "#7a533f",
+                        "surface-tint": "#885200",
+                        "on-secondary-fixed-variant": "#6a3930",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#d7c3b1",
+                        "on-primary-fixed-variant": "#673d00",
+                        "surface-dim": "#e0d9d0",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#fffbff",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#feb8ab",
+                        "tertiary-fixed-dim": "#efbba3",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#fbb6a8",
+                        "secondary": "#865046",
+                        "outline": "#857464",
+                        "primary": "#855000"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-page": "24px",
+                        "stack-sm": "8px",
+                        "gutter": "16px",
+                        "stack-md": "16px",
+                        "stack-lg": "32px",
+                        "section-gap": "48px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "body-lg": ["Manrope"],
+                        "headline-lg": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "body-md": ["Manrope"],
+                        "label-lg": ["Manrope"],
+                        "headline-md": ["Playfair Display"],
+                        "label-sm": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-effect {
+            background: rgba(255, 248, 240, 0.8);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+    <!-- Splash / Onboarding Container -->
+    <main class="relative min-h-screen w-full flex flex-col items-center justify-between overflow-hidden">
+        <!-- Background Content: High-end Photo/Illustration -->
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background z-10"></div>
+            <img class="w-full h-full object-cover opacity-90 scale-105"
+                data-alt="A luxurious, high-end editorial photograph of two elegant Golden Retrievers sitting gracefully and facing each other against a soft, cream-colored minimalist background. The lighting is warm and ethereal, creating a romantic and exclusive atmosphere. Subtle, artistically rendered heart motifs in a soft rose gold glow float gently between them. The overall aesthetic is one of warmth, premium quality, and sophisticated canine companionship, perfectly aligned with a luxury lifestyle brand."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdM6M3-vV-QpHaeZfzTsWWlWD-3r6X1RPeOrZrPXkbpidKkRt0OtA4KJI0rpKCCLS9ujQgje8wo0SbyiumvsTWOyIL5cMY7UbKzRBjmZi9kEoBcXM_Ev9xuVq5RUSeng5KPfcgV2dbmGKdZWqzLufSU2OlPrPNmU4ppB86eJNlS7sBOntchX4gpVkol_1Xc4zqckDIfb66nGTC9Wh-wz7yIW5nyBlNd1LkWiXupG4HlCZOdJcrXAsgdkbIYPWx_JRhXnyFZ9a9H4A" />
+        </div>
+        <!-- Top Content: Minimal Logo -->
+        <header class="relative z-20 mt-16 flex flex-col items-center space-y-6 fade-in-up"
+            style="animation-delay: 0.2s;">
+            <div class="animate-float">
+                <img alt="PawMatch Logo" class="w-24 h-24 md:w-32 md:h-32 drop-shadow-xl"
+                    src="data:image/png;base64,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" />
+            </div>
+        </header>
+        <!-- Center Content: Branding -->
+        <section class="relative z-20 flex flex-col items-center text-center px-margin-page fade-in-up"
+            style="animation-delay: 0.5s;">
+            <h1 class="font-display-lg text-display-lg text-primary italic mb-2 tracking-tight">
+                PawMatch
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xs font-light tracking-wide">
+                Find your dog's perfect match.
+            </p>
+        </section>
+        <!-- Bottom Content: Action Area -->
+        <footer class="relative z-20 w-full max-w-md px-margin-page pb-16 space-y-gutter fade-in-up"
+            style="animation-delay: 0.8s;">
+            <!-- Premium Glassmorphic Card for CTA -->
+            <div
+                class="glass-effect p-8 rounded-xl shadow-[0px_10px_30px_rgba(61,31,15,0.08)] border-[0.5px] border-secondary-fixed/50 flex flex-col space-y-6">
+                <button
+                    class="w-full bg-primary text-on-primary font-label-lg text-label-lg py-5 rounded-full shadow-lg hover:opacity-90 active:scale-95 transition-all duration-300 tracking-widest">
+                    GET STARTED
+                </button>
+                <div class="flex items-center justify-between w-full">
+                    <div class="h-[1px] flex-grow bg-outline-variant/30"></div>
+                    <span class="px-4 font-label-sm text-label-sm text-on-surface-variant">OR</span>
+                    <div class="h-[1px] flex-grow bg-outline-variant/30"></div>
+                </div>
+                <button
+                    class="w-full border border-primary text-primary font-label-lg text-label-lg py-5 rounded-full hover:bg-primary/5 active:scale-95 transition-all duration-300 tracking-widest">
+                    SIGN IN
+                </button>
+            </div>
+            <p class="text-center font-label-sm text-label-sm text-on-surface-variant opacity-60 pt-4">
+                Exclusively for elite pedigree matches
+            </p>
+        </footer>
+        <!-- Interactive Ambient Elements -->
+        <div class="absolute inset-0 pointer-events-none z-10" id="ambient-particles"></div>
+    </main>
+    <script>
+        // Micro-interaction: Subtle particle effect for "heart motifs"
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('ambient-particles');
+            const particleCount = 12;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'absolute material-symbols-outlined text-primary/20 pointer-events-none select-none';
+                particle.innerHTML = 'favorite';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.fontSize = (Math.random() * 20 + 10) + 'px';
+
+                // Custom animation duration and delay
+                const duration = Math.random() * 10 + 10;
+                const delay = Math.random() * 5;
+
+                particle.style.animation = `float ${duration}s ease-in-out ${delay}s infinite`;
+                particle.style.opacity = Math.random() * 0.3;
+
+                container.appendChild(particle);
+            }
+        });
+
+        // Button interactions
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(btn => {
+            btn.addEventListener('mouseenter', () => {
+                btn.style.transform = 'translateY(-2px)';
+            });
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = 'translateY(0px)';
+            });
+        });
+    </script>
+</body>
+
+</html>

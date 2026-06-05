@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+</head>
+<style>
+    .box {
+        background-color: red;
+        border: 2px solid black;
+        width: 50vw;
+        margin: auto;
+        text-align: center;
+    }
+
+    .container {
+        background-color: aqua;
+        border: 2px solid black;
+        width: 50vw;
+        margin: 23px auto;
+        /* height: 80vh; */
+        font-size: 1.5em;
+        min-height: 80vh;
+    }
+
+    .mycont {
+        border: 2px solid black;
+        width: 50vw;
+        background-color: red;
+        margin: 23px auto;
+
+    }
+
+    .container > div {
+        width: 50%;
+        margin: 0;
+        border: 2px solid black;
+        box-sizing: border-box;
+    }
+
+    .container > div > div {
+        width: 50%;
+        border: 2px solid black;
+    }
+</style>
+
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <div class="container">
+        <div>Lorem ipsum psum ex. Ut, voluptatibus. Illo eveniet exercitationem odio quas saepe, voluptas enim
+            praesentium, voluptate vitae nulla possimus, dolorum dolores ab officiis neque quia provident molestiae!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repellendus quo aperiam ex, ducimus saepe vitae
+            blanditiis corporis recusandae aspe eligendi sequi at porro velit maxime deserunt?
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, nostrum cumque quisquam, rerum possimus saepe quae cum adipisci ex similique, voluptate quis neque.
+            </div>
+        </div>
+    </div>
+    <div class="mycont">
+        This is another box
+    </div>
+</body>
+
+</html>
