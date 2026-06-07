@@ -5,17 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            border: 1px solid #ddd;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: white;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: royalblue;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: dodgerblue;
+        }
+    </style>
 </head>
 
 <body>
     <form action="submit.php">
         <div>
-            <label for="email">Enter your Email</label>
-            <input type="email" placeholder="Enter Email" required> 
+            <label for="email">Enter your Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
         </div>
         <div>
-            <label for="password">Password</label>
-            <input type="password" placeholder="Enter you password" required>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter you password" required>
         </div>
         <div>
             <button type="submit">Login</button>
