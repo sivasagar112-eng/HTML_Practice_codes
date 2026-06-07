@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            width: 400px;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image img {
+            width: 150px;
+            border-radius: 10px;
+        }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .name {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .rating {
+            font-size: 18px;
+            color: gold;
+        }
+
+        .rating span {
+            color: black;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .buy-btn {
+            width: fit-content;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 8px;
+            background-color: #0078d4;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .buy-btn:hover {
+            background-color: #005ea6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="content">
+            <div class="image">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSSoFZYKk8tUUJ5C8DMjJe56RPfgZrjXzdx2eVF8AR_-th3T8aRfYumovEnVXYNDQUrl8GUGVu2MYyJRbklgbmIpAKPPB7Lfg0wNaAHpSPQT9G4NHpG99jSCg"
+                     alt="Acer EK220Q Monitor">
+            </div>
+
+            <div class="details">
+                <div class="name">
+                    Acer EK220Q 21.5 Inch Full HD VA Panel Monitor
+                </div>
+
+                <div class="rating">
+                    ★★★★☆ <span>4.2/5 (1,245 reviews)</span>
+                </div>
+
+                <button class="buy-btn" type="button">
+                    Buy Now
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
