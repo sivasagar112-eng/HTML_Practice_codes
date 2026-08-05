@@ -16,7 +16,7 @@
         }
 
         nav {
-            background-color: rgb(123, 221, 96);
+            background-color: rgb(182, 235, 167);
             padding: 20px;
             display: flex;
             justify-content: space-around;
@@ -35,7 +35,6 @@
             gap: 50px;
             list-style: none;
             justify-content: right;
-            padding-left: 625px;
             position: relative;
             padding: 2px;
 
@@ -64,14 +63,44 @@
             border-radius: 34px;
             border: none;
         }
-        .input{
+
+        .input {
             padding-left: 200px;
         }
-        input::placeholder{
+
+        input::placeholder {
             color: whitesmoke;
         }
-        input{
+
+        input {
             color: white;
+        }
+
+        .information img {
+            width: 200px;
+            margin-left: 40px;
+            border-radius: 34px;
+            position: relative;
+            margin-right: 200px;
+        }
+
+        .information {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            position: relative;
+            padding: 0 100px 0 0;
+        }
+
+        .information .text {
+            border: 2px solid black;
+            width: 536px;
+            min-height: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
         }
     </style>
 </head>
@@ -87,11 +116,25 @@
                 <ul>
                     <li><a href="account.html">Login</a></li>
                     <li><a href="signup.html">SignUp</a></li>
-                    <li><a href="#">About Me</a></li>
+                    <li><a href="#About">About Me</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+    <main>
+        <div class="information">
+            <img src="siva2.jpeg" alt="">
+            <div class="text">
+                <h3>Hello, i'am Siva</h3>
+                </p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque obcaecati asperiores consectetur
+                ipsam,
+                quos ad esse, ut fuga eum, temporibus at dignissimos dicta!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae perspiciatis iusto quam ipsa sed
+                quo. Atque exercitationem officiis commodi error. Dicta animi magnam minus eligendi temporibus velit
+                recusandae, excepturi aspernatur?</p>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
