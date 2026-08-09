@@ -1,0 +1,52 @@
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    #dark {
+        display: none;
+    }
+
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 200px;
+        border: 2px solid black;
+        border-radius: 74px;
+    }
+
+    label {
+        padding: 20px;
+        border-radius: 50px;
+        border: 2px solid black;
+        cursor: pointer;
+    }
+
+    body:has(#dark:checked) {
+        background-color: black;
+    }
+
+    body:has(#dark:checked) label {
+        background-color: black;
+        color: white;
+        border-color: white;
+    }
+
+    body:has(#dark:checked) .box {
+        border-color: white;
+    }
+</style>
+
+<input type="checkbox" id="dark">
+
+<div class="box">
+    <label for="dark">
+        Dark Mode
+    </label>
+</div>
